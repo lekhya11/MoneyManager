@@ -1,4 +1,5 @@
 import './index.css'
+import MoneyDetails from '../MoneyDetails'
 
 const MoneyManager = () => (
   <div className="money-container">
@@ -8,6 +9,7 @@ const MoneyManager = () => (
         Welcome back to you <span className="highLight"> Money Manager</span>
       </p>
     </div>
+    <MoneyDetails />
   </div>
 )
 
