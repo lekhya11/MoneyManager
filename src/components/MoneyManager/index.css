@@ -1,0 +1,34 @@
+.money-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.person-details {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  background-size: cover;
+  width: 80%;
+  height: 40%;
+}
+
+.heading {
+  color: #475569;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.paragraph {
+  color: #475569;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-size: small;
+}
+.highLight {
+  color: #0b69ff;
+}
