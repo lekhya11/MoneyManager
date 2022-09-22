@@ -1,7 +1,9 @@
 .money-container {
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .person-details {
@@ -10,7 +12,7 @@
   border-radius: 10px;
   text-align: left;
   background-size: cover;
-  width: 80%;
+  width: 95%;
   height: 40%;
 }
 
