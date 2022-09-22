@@ -1,1 +1,62 @@
 /* Write your CSS here */
+.money-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.balances {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #ecfccb;
+  margin: 30px;
+  width: 210px;
+  border: 1px solid #84cc16;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  padding: 3px;
+  background-color: #84cc16;
+  height: 50px;
+  border: none;
+  width: 50px;
+}
+.para-balance {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: small;
+}
+.amount {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: large;
+}
+
+.bg-blue {
+  border: 1px solid #06b6d4;
+  background-color: #cffafe;
+}
+
+.bg-violet {
+  border: 1px solid #7c3aed;
+  background-color: #ede9fe;
+}
+
+.btn-blue {
+  background-color: #06b6d4;
+}
+.btn-violet {
+  background-color: #7c3aed;
+}
