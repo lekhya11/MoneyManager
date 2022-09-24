@@ -1,4 +1,3 @@
-/* Write your CSS here */
 .money-details {
   display: flex;
   flex-direction: row;
@@ -34,7 +33,7 @@
 .para-balance {
   color: #1e293b;
   font-family: 'Roboto';
-  font-weight: 300;
+  font-weight: 600;
   font-size: small;
 }
 .amount {
