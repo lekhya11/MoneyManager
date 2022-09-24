@@ -1,9 +1,9 @@
-
 import {Component} from 'react'
 import {v4} from 'uuid'
 
 import './index.css'
 import MoneyDetails from '../MoneyDetails'
+import TransactionItem from '../TransactionItem'
 
 const transactionTypeOptions = [
   {
@@ -22,6 +22,17 @@ class MoneyManager extends Component {
     amountInput: ' ',
     titleInput: '',
     optionId: transactionTypeOptions[0].optionId,
+  }
+
+  deleteTransaction = id => {
+    const {transactionsList} = this.state
+    const updatedTransactionList = transactionsList.filter(
+      eachTransaction => id !== eachTransaction.id,
+    )
+
+    this.setState({
+      transactionsList: updatedTransactionList,
+    })
   }
 
   onChangeOptionId = event => {
@@ -162,15 +173,32 @@ class MoneyManager extends Component {
                   </option>
                 ))}
               </select>
-              <button type="submit" className="add-button">
+              <button
+                type="submit"
+                className="add-button"
+                onSubmit={this.onClickAddButton}
+              >
                 ADD
               </button>
             </form>
           </div>
           <div className="history-container">
             <h1 className="heading">History</h1>
-            <div>
-              <p> {transactionsList[0]}</p>
+            <div className="transaction-details">
+              <ul className="table">
+                <li className="list-heading">
+                  <p className="table-header">TITLE</p>
+                  <p className="table-header">AMOUNT</p>
+                  <p className="table-header">TYPE</p>
+                </li>
+                {transactionsList.map(eachTrans => (
+                  <TransactionItem
+                    key={eachTrans.id}
+                    transactionDetails={eachTrans}
+                    deleteTransaction={this.deleteTransaction}
+                  />
+                ))}
+              </ul>
             </div>
           </div>
         </div>
