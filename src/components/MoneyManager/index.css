@@ -112,6 +112,7 @@
   border-radius: 9px;
   width: 60%;
   padding: 20px;
+   box-shadow: 3px 3px 3px 3px #7e858e;
 }
 
 .add-button {
