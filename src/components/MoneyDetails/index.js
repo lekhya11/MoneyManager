@@ -15,7 +15,7 @@ const MoneyDetails = props => {
         </button>
         <div>
           <p className="para-balance">Your Balance</p>
-          <p className="amount">RS {balanceAmount}</p>
+          <p className="amount" testid="balanceAmount">RS {balanceAmount}</p>
         </div>
       </div>
       <div className="balances bg-blue">
@@ -28,7 +28,7 @@ const MoneyDetails = props => {
         </button>
         <div>
           <p className="para-balance">Your Income</p>
-          <p className="amount">RS {incomeAmount}</p>
+          <p className="amount" testId="incomeAmount">RS {incomeAmount}</p>
         </div>
       </div>
       <div className="balances bg-violet">
@@ -41,7 +41,7 @@ const MoneyDetails = props => {
         </button>
         <div>
           <p className="para-balance">Your Expenses</p>
-          <p className="amount">RS {expensesAmount}</p>
+          <p className="amount"  testId="expensesAmount">RS {expensesAmount}</p>
         </div>
       </div>
     </div>
